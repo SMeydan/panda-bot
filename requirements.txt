@@ -1,3 +1,4 @@
 icrawler 
 python-telegram-bot
 aiohttp
+python-telegram-bot[job-queue]

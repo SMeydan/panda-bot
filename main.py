@@ -7,8 +7,8 @@ from datetime import timedelta
 from telegram import BotCommand
 import asyncio
 
-TOKEN = "your-token"
-CHAT_ID = 123123
+TOKEN = os.getenv("TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print(f"[LOG] chat_id = {update.effective_chat.id}")
